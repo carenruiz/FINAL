@@ -1,0 +1,329 @@
+
+    body{
+        font-family: 'Raleway', sans-serif;
+        margin: 0 !important;
+    }
+    .mini-menu{
+        float: left;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .mini-menu .container-user{
+        float:left;
+        display: flex;
+    }
+    .image-logo img{
+        max-width: 200px;
+    }
+
+    .search-container {
+        width: 50%;
+        display: flex;
+        padding: 0 10px;
+        position: relative;
+        justify-content: center;
+    }
+    .mini-bar{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    #search{
+        width: 70%;
+        height: 30px;
+        float: left;
+        border: 0;
+        padding-top: 2px;
+        color: #6d6d6d;
+        font-size: 11px;
+        font-weight: 500;
+        border-bottom: 1px solid #d7d7d7;
+    }
+    .button-search{
+        width: 30px;
+        min-height: 30px;
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        right: 116px;
+    }
+    .bag-container .bag:before{
+        content: "\f290";
+        font-size: 20px;
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+    }
+    .bag-container .count-bag{
+        border-radius: 100%;
+        position: absolute;
+        top: 26px;
+        background-color: #e4002b;
+        color: #fff !important;
+        font-size: 8px;
+        line-height: 10px;
+        text-align: center;
+        width: 18px;
+        height: 18px;
+
+    }
+    .bag-container{
+        margin: 6px;
+    }
+    .my-acount-container{
+        margin: 10px;
+    }
+    .my-acount-container span.my-acount:after{
+        content: "\f078";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 700;
+        font-size: 9px;
+    }
+    nav a{
+        text-decoration: none;
+        color: #4a4a4a;
+        margin: 0 10px;
+    }
+    nav{
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+    nav a:hover{
+        color: #ddd;
+    }
+    footer .footer, .newsletter{
+        width: 100%;
+        float: left;
+        margin: 0 !important;
+    }
+    footer .newsletter{
+        background-color:#f6f4f4;
+        text-align: center;
+        padding: 15px 0;
+
+    }
+    footer .newsletter span{
+        display: block;
+        line-height: 26.5px;
+        letter-spacing: 0.3px;
+
+    }
+    footer .newsletter span.bold{
+        font-weight: 700;
+        font-size: 15px;
+    }
+    footer .newsletter span.subtitulo{
+        font-size: 11px;
+    }
+    footer .newsletter input{
+        border: 1px solid #000;
+        width: 19%;
+        height: 30px;
+        border-right: none;
+        float: left;
+        background: transparent;
+        color: #565656;
+        font-size: 12px;
+        padding-left: 7px;
+    }
+    footer .newsletter button{
+        height: 34px;
+        background-color: #000;
+        border: 1px solid #000;
+        border-left: none;
+        float: left;
+        width: 46px;
+    }
+    footer .newsletter .action{
+        display: flex;
+        justify-content: center;
+    }
+    footer .bottom-footer{
+        background-color: #5dbac4;
+    }
+    footer .bottom-footer p{
+        color: #fff;
+        font-size: 13px;
+        margin: 0;
+        line-height: 33px;
+    }
+    .imagen-footer{
+        text-align: center;
+    }
+    .imagen-footer img{
+        max-width: 69px;
+        margin: 17px 0;
+    }
+    .far.fa-envelope{
+        color: #fff;
+        font-size: 16px;
+    }
+    .cuarto p{
+        font-size: 12px;
+
+    }
+    .contenedor-bottomf{
+        padding-top: 17px;
+        padding-bottom: 26px;
+    }
+    .wrapper{
+        width: 100%;
+        float: left;
+    }
+
+
+    /*tabs*/
+    .wrapper .btn-compra button{
+        width: 100%;
+        float: left;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: #f3a600;
+        color: #fff;
+        font-weight: 700;
+        font-size: 15px;
+        border: 0;
+        border-radius: 1px;
+        line-height: 44px;
+        cursor:pointer;
+    }
+    .sliderdos{
+        display: flex;
+    }
+    .sliderdos .tabla{
+        padding: 10px;
+    }
+    .iconos i{
+        margin: 10px;
+    }
+
+
+/*general*/
+.display{
+    display: flex;
+    justify-content: space-around;
+}
+.display-center{
+    display: flex;
+    justify-content: center;
+}
+.display-space{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12px;
+    padding-right: 21px;
+}
+.block{
+    display: block;
+}
+.inline{
+    display: inline-block;
+}
+.center{
+    text-align: center;
+}
+.container{
+    width: 1169px;
+    float: none;
+    margin: 0 auto;
+}
+
+/*login*/
+.account-login {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.col2-set {
+    width: 100%;
+}
+.col2-set .col-1, .col2-set .col-2 {
+    width: 50%;
+}
+.col2-set .col-1 {
+    float: left;
+    padding-left: 0;
+}
+.account-login .registered-users {
+    float: left;
+    padding-bottom: 0;
+}
+.account-login .content p {
+    color: #6d6d6d;
+    font-size: 14px;
+    line-height: 18px;
+}
+.buttons-set {
+    text-align: left;
+    border-top: 0;
+}
+
+.buttons-set button,.buttons-set .button {
+    float: none;
+    min-width: 117px;
+}
+a.button {
+    padding: 15px 20px;
+}
+a.button {
+    text-decoration: none;
+}
+.button, .responsive-slide .rslides .slide-image .slide-caption .call-to-action {
+    color: #fff;
+    cursor: pointer;
+    background-color: #a25b0d;
+    float: left;
+    font-size: 14px;
+    padding: 0 26px;
+    line-height: 40px;
+    transition: opacity 300ms;
+    border: none;
+    font-weight: 600;
+    border-radius: 2px;
+}
+#login-form .input-box {
+    margin: 15px 0px;
+}
+.form-list > li {
+    margin-bottom: 2px;
+}
+.form-list{
+    padding: 0;
+}
+.form-list li .input-box input{
+    color: #565656;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 28px;
+    height: 35px;
+    width: 80%;
+    border: 1px solid #000000;
+    border-radius: 0;
+}
+
+ p.required {
+    color: red !important;
+    font-size: 12px !important;
+    margin-top: 0px;
+}
+
+/*registrarme*/
+#form-validate .fieldset {
+    float: left;
+    width: 50%;
+}
+#form-validate .buttons-set {
+    clear: both;
+    margin: 2px 0 0;
+    padding-top: 2px;
+    border-top: 1px solid #EDEDED;
+    text-align: right;
+}
+.buttons-set .back-link {
+    float: left;
+    margin: 0;
+    line-height: 33px;
+}
