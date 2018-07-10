@@ -75,6 +75,8 @@
     }
     .my-acount-container{
         margin: 10px;
+        position: relative;
+        cursor: pointer;
     }
     .my-acount-container span.my-acount:after{
         content: "\f078";
@@ -91,6 +93,7 @@
         width: 100%;
         float: left;
         text-align: center;
+        margin: 20px 0;
     }
     nav a:hover{
         color: #ddd;
@@ -326,4 +329,56 @@ a.button {
     float: left;
     margin: 0;
     line-height: 33px;
+}
+header#header.sticky #nav{
+    top: 0;
+    padding: 25px 0;
+    width: 100%;
+    background: white;
+    position: fixed;
+    z-index: 9999;
+    margin: 0;
+    transition: padding-top 1s;
+    box-shadow: 0 0 7px rgba(2, 3, 3, 0.55);
+}
+header#header.sticky .image-logo img {
+    position: fixed;
+    z-index: 99999;
+    width: 127px;
+    top: 0;
+    left: 49px;
+}
+ul#header-acount {
+    float: left;
+    width: 100%;
+    padding: 17px 40px;
+    margin: 0;
+    background: #fff;
+    border: solid 1px #e9e9e9;
+    position: absolute;
+    z-index: 9999;
+    right: -6px;
+    list-style: none;
+    box-shadow: 1.4px 1.4px 2.9px 0.1px rgba(0, 0, 0, 0.05);
+}
+ul#header-acount li a {
+    color: #000000;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+ul#header-acount li:before{
+    content: "\f054";
+    font: normal normal normal 7px/1 FontAwesome;
+    margin-right: 5px;
+}
+ul#header-acount li a:hover {
+    text-decoration: underline;
+}
+.container{
+    width: 1170px !important;
+    margin: 0 auto;
+}
+.tabla{
+    margin: 10px;
 }

@@ -9,18 +9,20 @@ var HOME = {
     init:function(){
         // if(jQuery('body').hasClass('home')){
             this.slider();
-             // this.slidercomprar();
+            this.slidercomprar();
+            this.stickyHeader();
+            this.toggle();
         // }
     },
 
 
     slider: function(){
-    $('.owl-carousel').owlCarousel({
+    $('.owl-carousel.uno').owlCarousel({
             loop:true,
             dots:true,
             responsiveClass:true,
-            // autoplay:true,
-            // autoplayTimeout:3000,
+            autoplay:true,
+            autoplayTimeout:3000,
             responsive:{
                 0:{
                     items:1,
@@ -40,9 +42,9 @@ var HOME = {
         })
     },
     slidercomprar: function(){
-    $('.owl-carouseldos').owlCarousel({
+    $('.owl-carousel.dos').owlCarousel({
             loop:true,
-            dots:true,
+            nav:true,
             responsiveClass:true,
             responsive:{
                 0:{
@@ -50,11 +52,11 @@ var HOME = {
                     dots:true
                 },
                 600:{
-                    items:1,
+                    items:2,
                     nav:false
                 },
                 1000:{
-                    items:1,
+                    items:4,
                     dots:true,
                     loop:true
 
@@ -62,6 +64,20 @@ var HOME = {
             }
         })
     },
+    stickyHeader: function(){
+        jQuery(window).scroll(function () {
+            if (jQuery(this).scrollTop() > 150) {
+                jQuery("#header,.nav-links").addClass('sticky');
+            } else {
+                jQuery("#header,.nav-links").removeClass('sticky');
+            }
+        });
+    },
+    toggle:function(){
+        jQuery(".my-acount").click(function(){
+            jQuery("#header-acount").toggle();
+        });
+    }
 }
 var FOOTER ={
 

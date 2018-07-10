@@ -12,71 +12,79 @@
 </head>
 <body>
 	<div>
-		<div class="mini-menu">
-			<div class="container-image">
-				<div class="image-logo">
-					<img src="front/image/logodos.png">
-				</div>
-			</div>
-			<div class="search-container">
-				<input type="" name="" id="search" placeholder="Buscar">
-				<button class="button-search"><i class="fas fa-search"></i></button>
-			</div>	
-			<div class="container-user">
-				<div class="my-acount-container">
-					<span class="my-acount">Mi cuenta</span>
-				</div>
-				<div class="bag-container">
-					<span class="bag"></span>
-					<span class="count-bag"></span>
-				</div>
-			</div>
+        <header id="header">
+    		<div class="mini-menu">
+    			<div class="container-image">
+    				<div class="image-logo">
+                        <img src="{{asset ('front/imagen/logodos.png') }}">
+    				</div>
+    			</div>
+    			<div class="search-container">
+    				<input type="" name="" id="search" placeholder="Buscar">
+    				<button class="button-search"><i class="fas fa-search"></i></button>
+    			</div>	
+    			<div class="container-user">
+    				<div class="my-acount-container">
+    					<span class="my-acount">Mi cuenta</span>
+                        <ul id="header-acount">
+                            <li><a href="">Mi cuenta</a></li>
+                            <li><a href="">Iniciar sesion</a></li>
+                            <li><a href="">Registrarme</a></li>
+                            
+                        </ul>
+    				</div>
+    				<div class="bag-container">
+    					<span class="bag"></span>
+    					<span class="count-bag"></span>
+    				</div>
+    			</div>
 
-		</div>
-		<nav>
-			<a href="">Cine</a> 
-			<a href=""> Cartelera</a>
-			<a href="">Promociones</a>
-			<a href="">Como comprar</a>
-		</nav>    
+    		</div>
+    		<nav id="nav">
+    			<a href="">Cine</a> 
+    			<a href=""> Cartelera</a>
+    			<a href="">Promociones</a>
+    			<a href="">Como comprar</a>
+    		</nav> 
+        </header>   
 	</div>
     <div class="wrapper">
-        <div class="owl-carousel" id="uno">
+        <div class="owl-carousel uno" id="uno">
             <div>
-                <img src="front/image/slider.1.jpg">
+                <img src="{{asset ('front/imagen/slider.1.jpg') }}">
             </div>
             <div>
-                <img src="front/image/slider2.jpg">
+                <img src="{{asset ('front/imagen/slider2.jpg') }}">
             </div>
             <div>
-                <img src="front/image/slider3.jpg">
+                <img src="{{asset ('front/imagen/slider3.jpg') }}">
             </div>
             <div>
-                <img src="front/image/slider4.jpg">
+                <img src="{{asset ('front/imagen/slider4.jpg') }}">
             </div>
         </div>
-        <div class=" owl-carouseldos sliderdos">
+        <div class=" owl-carousel dos container" id="dos">
                <div class="tabla">
-                   <img src="front/image/tabs1.jpg">
+                    <img src="{{asset ('front/imagen/tabs1.jpg') }}">
                     <div class="btn-compra">
                         <button>Comprar</button>
                     </div>
                </div> 
 
                <div class="tabla">
-                   <img src="front/image/tabs2.jpg">
+                    <img src="{{asset ('front/imagen/tabs2.jpg') }}">
                     <div class="btn-compra">
                         <button>Comprar</button>
                     </div>
                </div> 
                <div class="tabla">
-                   <img src="front/image/tabs3.jpg">
+                    <img src="{{asset ('front/imagen/tabs3.jpg') }}">
                     <div class="btn-compra">
                         <button>Comprar</button>
                     </div>
                </div> 
                <div class="tabla">
-                   <img src="front/image/tabs4.jpg">
+                    <img src="{{asset ('front/imagen/tabs4.jpg') }}">
                     <div class="btn-compra">
                         <button>Comprar</button>
                     </div>
@@ -95,7 +103,7 @@
         </div>
         <div class="footer">
             <div class="imagen-footer">
-                <img src="front/image/CT.png">
+                <img src="{{asset ('front/imagen/CT.png') }}">
             </div>
             <div class="display-center iconos">
                 <i class="fab fa-facebook-f"></i>
