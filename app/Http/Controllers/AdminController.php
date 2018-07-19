@@ -18,16 +18,16 @@ class AdminController extends Controller
     public function registro(){
         $data=request()->all();
         $rules = [
-        'name'=> 'required',
-        'email'=> 'required',
-        'password'=> 'required',
-        'lastname'=> 'required',
+        'name'=>'required',
+        'email'=>'required',
+        'password'=>'required',
+        'lastname'=>'required',
         ];
-        $validator = Validator::make($data, $rules);
+        $validator=Validator::make($data,$rules);
         if ($validator->fails()){
             return redirect()->back()->withInput()->withErrors($validator->errors());
         }else{
-           $data['idgrupo'] = 2;
+           $data['idgrupo']=2;
             $registro=User::create($data);
             return redirect()->back();
         }

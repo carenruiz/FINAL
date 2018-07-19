@@ -18,24 +18,24 @@ class EventosController extends Controller
     }
     public function postalta(){
         $data=request()->all();
-        $rules = [
-        'nombre'=> 'required',
-        'descripcion'=> 'required',
-        'fecha'=> 'required',
-        'horario'=> 'required',
-        'precio'=> 'required',
-        'cantidad'=> 'required',
-        'imagen'=> 'required|file|image|mimes:jpeg,jpg'
+        $rules=[
+        'nombre'=>'required',
+        'descripcion'=>'required',
+        'fecha'=>'required',
+        'horario'=>'required',
+        'precio'=>'required',
+        'cantidad'=>'required',
+        'imagen'=>'required|file|image|mimes:jpeg,jpg'
         ];
-        $validator = Validator::make($data, $rules);
+        $validator=Validator::make($data, $rules);
         if ($validator->fails()){
             return redirect()->back()->withInput()->withErrors($validator->errors());
         }else{
-            $file = request()->file('imagen');
-            $nombre = $file->getClientOriginalName();
+            $file=request()->file('imagen');
+            $nombre=$file->getClientOriginalName();
            Storage::disk('evento')->put('', $file);
-            $data['imagen'] = (string) 'front/imagen/'.$nombre;
-            $evento= evento::create($data);
+            $data['imagen']=(string) 'front/imagen/'.$nombre;
+            $evento=evento::create($data);
             return redirect()->to('/evento');
         }
     	

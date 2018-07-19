@@ -1,23 +1,21 @@
 jQuery(document).ready(function(){
     HOME.init();
-
-
-
+    FOOTER.init();
 });
 
-var HOME = {
+var HOME={
     init:function(){
-        // if(jQuery('body').hasClass('home')){
+        //if(jQuery('body').hasClass('home')){
             this.slider();
             this.slidercomprar();
             this.stickyHeader();
             this.toggle();
-        // }
+        //}
     },
 
 
-    slider: function(){
-    jQuery('.owl-carousel.uno').owlCarousel({
+    slider:function(){
+        jQuery('.owl-carousel.uno').owlCarousel({
             loop:true,
             dots:true,
             responsiveClass:true,
@@ -42,7 +40,7 @@ var HOME = {
         })
     },
     slidercomprar: function(){
-    $('.owl-carousel.dos').owlCarousel({
+        jQuery('.owl-carousel.dos').owlCarousel({
             loop:true,
             nav:true,
             responsiveClass:true,
@@ -65,10 +63,11 @@ var HOME = {
         })
     },
     stickyHeader: function(){
-        jQuery(window).scroll(function () {
-            if (jQuery(this).scrollTop() > 150) {
+        jQuery(window).scroll(function (){
+            if(jQuery(this).scrollTop() > 150) {
                 jQuery("#header,.nav-links").addClass('sticky');
-            } else {
+            } 
+            else{
                 jQuery("#header,.nav-links").removeClass('sticky');
             }
         });
@@ -80,9 +79,7 @@ var HOME = {
     }
 }
 var FOOTER ={
-
-    init:function(){
-        
+    init:function(){     
     },
     newsLeave: function(sender, defaultValue) {
         if (jQuery.trim(sender.value) == '') sender.value = defaultValue;

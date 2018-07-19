@@ -136,6 +136,6 @@
 </body>
 </html>
 
-    <script src="front/libraries/OwlCarousel/docs/assets/vendors/jquery.min.js"></script>
-    <script src="front/libraries/OwlCarousel/docs/assets/owlcarousel/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="front/js/custom.js"></script>
+<script src="front/libraries/OwlCarousel/docs/assets/vendors/jquery.min.js"></script>
+<script src="front/libraries/OwlCarousel/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="front/js/custom.js"></script>
