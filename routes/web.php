@@ -22,6 +22,8 @@ Route::get('/evento', 'EventosController@index')->middleware('auth');
 Route::get('/eventoalta', 'EventosController@alta')->middleware('auth');
 Route::post('/eventoalta', 'EventosController@postalta')->middleware('auth');
 Route::get('/eventobaja/{id}', 'EventosController@baja')->middleware('auth');
+Route::get('/eventoeditar/{id}','EventosController@editar')->middleware('auth');
+Route::post('/eventoeditar/{id}','EventosController@posteditar')->middleware('auth');
 
 Route::get('/orden', 'OrdenesController@index')->middleware('auth');
 Route::get('/ordenalta', 'OrdenesController@alta')->middleware('auth');

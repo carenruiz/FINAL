@@ -1,4 +1,4 @@
-$(document).ready(function(){
+jQuery(document).ready(function(){
     HOME.init();
 
 
@@ -17,7 +17,7 @@ var HOME = {
 
 
     slider: function(){
-    $('.owl-carousel.uno').owlCarousel({
+    jQuery('.owl-carousel.uno').owlCarousel({
             loop:true,
             dots:true,
             responsiveClass:true,

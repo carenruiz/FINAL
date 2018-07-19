@@ -369,7 +369,7 @@ ul#header-acount li a {
 }
 ul#header-acount li:before{
     content: "\f054";
-    font: normal normal normal 7px/1 FontAwesome;
+    font-: normal normal normal 7px/1 FontAwesome;
     margin-right: 5px;
 }
 ul#header-acount li a:hover {

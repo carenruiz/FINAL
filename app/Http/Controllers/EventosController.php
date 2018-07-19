@@ -41,8 +41,20 @@ class EventosController extends Controller
     	
     }
     public function baja($id){
-        $evento= evento::find((int)$id);
+        $evento=evento::find((int)$id);
         $evento->delete();
     	return redirect()->to('/evento');
+    }
+    public function editar($id){
+        $eventoedit=evento::find((int)$id);
+        //dd($eventoedit);
+        return view('admin.eventos.eventocrear',compact('eventoedit'));       
+    }
+    public function posteditar($id){
+        $data=request()->all();
+        $eventoedit=evento::find((int)$id);
+        $eventoedit->fill($data);
+        $eventoedit->save();
+        return redirect()->to('/evento');
     }
 }

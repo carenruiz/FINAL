@@ -42,6 +42,9 @@
                   <td><div class="pull-right">
                     <a class="ion ion-close" style="font-size: 150%;" onclick="eventobaja({{$e->id}});"></a>
                 </div></td>
+                <td><div class="pull-right">
+                    <a class="ion ion-close" style="font-size: 150%;" href="{{url('/eventoeditar',[$e->id])}}"></a>
+                </div></td>
                 </tr>
                 @endforeach
                 
