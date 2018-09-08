@@ -10,6 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::view('/pdp', 'pdp');
+Route::view('/body', 'bodyhome');
+
 
 Route::get('/', 'HomeController@welcome');
 Route::post('/registro', 'AdminController@registro');

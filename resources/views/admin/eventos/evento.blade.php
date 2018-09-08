@@ -27,7 +27,8 @@
                   <th>Horario</th>
                   <th>Precio</th>
                   <th>Cantidad</th>
-                  <th></th>
+                  <th>Eliminar</th>
+                  <th>Editar</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -39,12 +40,16 @@
                   <td>{{$e->horario}}</td>
                   <td>{{$e->precio}}</td>
                   <td>{{$e->cantidad}}</td>
-                  <td><div class="pull-right">
-                    <a class="ion ion-close" style="font-size: 150%;" onclick="eventobaja({{$e->id}});"></a>
-                </div></td>
-                <td><div class="pull-right">
-                    <a class="ion ion-close" style="font-size: 150%;" href="{{url('/eventoeditar',[$e->id])}}"></a>
-                </div></td>
+                  <td>
+                      <div class="pull-right">
+                        <a class="ion ion-close" style="font-size: 150%;" onclick="eventobaja({{$e->id}});"></a>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pull-right">
+                        <a class="ion ion-edit" style="font-size: 150%;" href="{{url('/eventoeditar',[$e->id])}}"></a>
+                    </div>
+                  </td>
                 </tr>
                 @endforeach
                 

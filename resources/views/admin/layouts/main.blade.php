@@ -230,6 +230,6 @@ if (mensaje) {
 else{
     location.href='/evento';
 }
-}</script>>
+}</script>
 </body>
 </html>

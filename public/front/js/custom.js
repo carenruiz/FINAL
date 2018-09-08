@@ -1,7 +1,25 @@
 jQuery(document).ready(function(){
     HOME.init();
     FOOTER.init();
+    PRODUCTO.init();
 });
+var HEADER={
+    init:function(){
+        this.menu();
+        this.user();
+    },
+    menu:function(){
+        jQuery("#menu").click(function(){
+            jQuery("#nav").toggle();
+        });
+    },
+    user:function(){
+        jQuery("#pop-up").click(function () {
+            jQuery("#popup-menu").fancybox();
+        });
+    },
+
+}
 
 var HOME={
     init:function(){
@@ -65,16 +83,16 @@ var HOME={
     stickyHeader: function(){
         jQuery(window).scroll(function (){
             if(jQuery(this).scrollTop() > 150) {
-                jQuery("#header,.nav-links").addClass('sticky');
+                jQuery(".mini-menu").addClass('sticky');
             } 
             else{
-                jQuery("#header,.nav-links").removeClass('sticky');
+                jQuery(".mini-menu").removeClass('sticky');
             }
         });
     },
     toggle:function(){
-        jQuery(".my-acount").click(function(){
-            jQuery("#header-acount").toggle();
+        jQuery("#menu").click(function(){
+            jQuery("#nav").toggle();
         });
     }
 }
@@ -88,4 +106,20 @@ var FOOTER ={
         if (sender.value == defaultValue) sender.value = '';
         else sender.select();
     },
+}
+var PRODUCTO ={
+    init:function(){
+        this.tabs();
+    },
+
+    tabs:function(){
+        jQuery( 'li.center').click(function() {
+            if(jQuery('li.center').hasClass('active')) {
+                jQuery('li.center').removeClass('active');
+            } 
+            else{
+                jQuery(this).addClass('active')
+            }
+        });
+    }
 }
